@@ -25,4 +25,10 @@ describe 'recipe api service' do
     #   expect(meal[:strMeal].upcase).to include("CHICKEN")
     # end
   end
+
+  it 'filters by category' do
+    response = RecipeService.filter_by_category("dessert")
+
+    expect(response[:meals]).to be_a(String)
+  end
 end
