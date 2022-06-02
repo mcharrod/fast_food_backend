@@ -1,8 +1,11 @@
 class Api::V1::RecipesController < ApplicationController
   def name_find
+    
+    # render json: serializer(something)
   end
 
   def id_find
+    # render something here lol
   end
 
   def random_find
@@ -15,5 +18,5 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def area_find
-  end 
+  end
 end
