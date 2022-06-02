@@ -27,10 +27,11 @@ class RecipeService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-
   def self.conn
     Faraday.new(url: 'https://themealdb.com') do |f|
       f.adapter Faraday.default_adapter
     end
   end
+
+
 end
