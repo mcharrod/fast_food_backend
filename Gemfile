@@ -38,6 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'figaro'
 gem 'faraday'
 gem 'faraday'
+gem 'jsonapi-serializer'
 
 group :test do
   gem 'simplecov'
