@@ -11,12 +11,15 @@ class Api::V1::UsersController <ApplicationController
     end
 
     def update 
-        user = User.update(:email, user_params)
+        user = User.update(params[:id], user_params)
         if user.save 
             render json: UserSerializer.new(user) 
         else 
             render status: 400
         end
+    end
+    def destroy 
+        User.delete(params[:id])
     end
 
     private 
