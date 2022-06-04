@@ -1,11 +1,13 @@
 class Api::V1::RecipesController < ApplicationController
   def name_find
-    
-    # render json: serializer(something)
+    recipes = RecipesFacade.find_recipes_by_name(params[:query])
+    render json: RecipesSerializer.new(recipes)
   end
 
   def id_find
-    # render something here lol
+    recipe_id = params[:id]
+    recipe = RecipesFacade.find_recipe_by_id(recipe_id)
+    render json: RecipesSerializer.new(recipe)
   end
 
   def random_find

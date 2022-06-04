@@ -6,23 +6,30 @@ class RecipeService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.search_meal_by_id(meal_id)
+  def self.search_recipes_by_id(meal_id)
     response = conn.get('/api/json/v1/1/lookup.php') do |faraday|
       faraday.params['i'] = meal_id
     end
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.search_meal_by_main_ingredient(ingredient)
+  def self.search_recipes_by_ingredient(ingredient)
     response = conn.get('/api/json/v1/1/filter.php') do |faraday|
       faraday.params['i'] = ingredient
     end
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.filter_by_category(category)
+  def self.search_recipes_by_category(category)
     response = conn.get('/api/json/v1/1/filter.php') do |faraday|
       faraday.params['c'] = category
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.search_recipes_by_area(area)
+    response = conn.get('/api/json/v1/1/filter.php') do |faraday|
+      faraday.params['a'] = area
     end
     JSON.parse(response.body, symbolize_names: true)
   end
@@ -32,6 +39,4 @@ class RecipeService
       f.adapter Faraday.default_adapter
     end
   end
-
-
 end
