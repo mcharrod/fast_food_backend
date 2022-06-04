@@ -3,13 +3,17 @@ class Recipe
               :name,
               :ingredients,
               :image,
-              :instructions
+              :instructions,
+              :category,
+              :area
   def initialize(recipe_data)
     @id = recipe_data[:idMeal]
     @name = recipe_data[:strMeal]
     @image = recipe_data[:strMealThumb]
     @ingredients = get_ingredients(recipe_data)
     @instructions = recipe_data[:strInstructions]
+    @category = recipe_data[:strCategory]
+    @area = recipe_data[:strArea]
   end
 
   def get_ingredients(recipe_data)

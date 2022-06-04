@@ -29,6 +29,11 @@ describe 'recipe api service' do
   it 'filters by category' do
     response = RecipeService.filter_by_category("dessert")
 
-    expect(response[:meals]).to be_a(String)
+    expect(response[:meals]).to be_a(Array)
+
+    meal = response[:meals].first
+
+    expect(meal).to have_key(:idMeal)
+    expect(meal).to have_key(:strMeal)
   end
 end
