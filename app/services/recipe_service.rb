@@ -1,15 +1,20 @@
 class RecipeService
-  def self.search_for_meal_by_name(meal_name)
+  def self.search_recipes_by_name(meal_name)
     response = conn.get('/api/json/v1/1/search.php') do |faraday|
       faraday.params['s'] = meal_name
     end
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.search_recipes_by_id(meal_id)
+  def self.search_recipe_by_id(meal_id)
     response = conn.get('/api/json/v1/1/lookup.php') do |faraday|
       faraday.params['i'] = meal_id
     end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.search_random_recipe 
+    response = conn.get('/api/json/v1/1/random.php')
     JSON.parse(response.body, symbolize_names: true)
   end
 
