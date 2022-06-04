@@ -38,6 +38,10 @@ describe 'recipe request' do
   end
 
   it '#id_find' do
+    get '/api/v1/recipes/find?id=53051'
+    binding.pry
+
+    expect(response.body).to eq("bingus")
   end
 
   it '#random_find' do
