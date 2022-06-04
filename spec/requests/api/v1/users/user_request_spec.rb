@@ -21,4 +21,13 @@ RSpec.describe "User CRUD funtionality" do
         user = JSON.parse(response.body, symbolize_names: true)
         expect(user[:data][:attributes][:email]).to eq("beth@gmail.com")
     end
+    it "can edit a users info " do 
+        User.destroy_all
+        create_list(:user, 10)
+        john = create(:user, name: "John")
+        patch "/api/v1/users/#{john.id}?name=Sue"
+        sue = JSON.parse(response.body, symbolize_names: true)
+        expect(sue[:data][:attributes][:name]).to eq("Sue")
+        expect(john.id.to_s).to eq(sue[:data][:id])
+    end
 end
