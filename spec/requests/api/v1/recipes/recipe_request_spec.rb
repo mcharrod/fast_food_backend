@@ -39,7 +39,6 @@ describe 'recipe request' do
 
   it '#id_find' do
     get '/api/v1/recipes/find?id=53051'
-    binding.pry
 
     expect(response.body).to eq("bingus")
   end
