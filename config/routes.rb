@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+        get 'recipes/search', to: 'recipes#name_find'
+        get 'recipes/find', to: 'recipes#id_find'
+        get 'recipes/random_meal', to: 'recipes#random_find'
+        get 'recipes/ingredient', to: 'recipes#ingredient_find'
+        get 'recipes/category', to: 'recipes#category_find'
+        get 'recipes/area', to: 'recipes#area_find'
+      resources :users, except:[:index, :show]
+      get 'user', to: 'users#show'
+
+    end
+  end
 end
