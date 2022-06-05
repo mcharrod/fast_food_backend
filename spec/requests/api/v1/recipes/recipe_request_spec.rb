@@ -38,17 +38,20 @@ describe 'recipe request' do
   end
 
   it '#id_find' do
-    get '/api/v1/recipes/find?id=53051'
-
-    expect(response.body).to eq("bingus")
+    # get '/api/v1/recipes/find?id=53051'
+    #
+    # expect(response.body).to eq("bingus")
   end
 
   it '#random_find' do
+    # get '/api/v1/recipes/random_meal'
   end
 
   it '#ingredient_find' do
+    # get '/api/v1/'
   end
 
   it '#category_find' do
+    # get '/api/v1/'
   end
 end

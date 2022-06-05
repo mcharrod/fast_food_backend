@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'recipe api service' do
   it 'searches by name of meal' do
-    response = RecipeService.search_for_meal_by_name("Spaghetti")
+    response = RecipeService.search_recipes_by_name("Spaghetti")
 
     expect(response[:meals]).to be_an(Array)
     expect(response[:meals].first[:strMeal]).to be_a(String)
@@ -10,14 +10,14 @@ describe 'recipe api service' do
   end
 
   it 'searches by id of meal' do
-    response = RecipeService.search_meal_by_id('52772')
+    response = RecipeService.search_recipe_by_id('52772')
     meal = response[:meals].first
 
     expect(meal[:idMeal]).to eq('52772')
   end
 
   it 'searches by main ingredient' do
-    response = RecipeService.search_meal_by_main_ingredient('chicken')
+    response = RecipeService.search_recipes_by_ingredient('chicken')
 
     expect(response[:meals]).to be_an(Array)
 
@@ -27,7 +27,7 @@ describe 'recipe api service' do
   end
 
   it 'filters by category' do
-    response = RecipeService.filter_by_category("dessert")
+    response = RecipeService.search_recipes_by_category("dessert")
 
     expect(response[:meals]).to be_a(Array)
 
