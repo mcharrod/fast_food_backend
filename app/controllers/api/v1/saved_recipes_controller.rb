@@ -3,8 +3,8 @@ class Api::V1::SavedRecipesController < ApplicationController
         SavedRecipe.create(save_recipe_params)
     end
     def index 
-        user = User.find(:user_id)
-        render json: RecipesSerializer.new(user.saved_recipes)
+        user = User.find(params[:user_id])
+        render json: SavedRecipesSerializer.new(user.saved_recipes)
     end
 
     private 
