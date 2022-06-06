@@ -17,4 +17,14 @@ RSpec.describe'Saved Recipes Requests' do
         expect(recipes.count).to eq(10)
         expect(recipes).to be_an(Array)
     end
+
+    it "a user can remove a recipe from their saved list" do 
+        user = create(:user)
+        create_list(:saved_recipe, 10, user_id: user.id)
+        recipe = create(:saved_recipe, user_id: user.id)
+        delete "/api/v1/saved_recipes/#{recipe.id}"
+        expect(SavedRecipe.all.count).to eq(10)
+        expect(SavedRecipe.ids).to_not include(recipe.id)
+
+    end
 end

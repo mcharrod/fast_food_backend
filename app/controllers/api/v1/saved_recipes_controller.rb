@@ -7,6 +7,10 @@ class Api::V1::SavedRecipesController < ApplicationController
         render json: SavedRecipesSerializer.new(user.saved_recipes)
     end
 
+    def destroy 
+        SavedRecipe.destroy(params[:id])
+    end
+
     private 
 
     def save_recipe_params 
