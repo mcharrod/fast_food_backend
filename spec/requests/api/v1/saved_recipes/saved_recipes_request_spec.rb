@@ -25,6 +25,5 @@ RSpec.describe'Saved Recipes Requests' do
         delete "/api/v1/saved_recipes/#{recipe.id}"
         expect(SavedRecipe.all.count).to eq(10)
         expect(SavedRecipe.ids).to_not include(recipe.id)
-
     end
 end

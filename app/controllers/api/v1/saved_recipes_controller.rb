@@ -1,4 +1,5 @@
 class Api::V1::SavedRecipesController < ApplicationController
+    skip_before_action :verify_authenticity_token
     def create 
         SavedRecipe.create(save_recipe_params)
     end
