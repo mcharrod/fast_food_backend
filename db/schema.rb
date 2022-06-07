@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_03_141516) do
+ActiveRecord::Schema.define(version: 2022_06_06_131651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "saved_recipes", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "recipe_name"
+    t.string "recipe_id"
+    t.index ["user_id"], name: "index_saved_recipes_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -22,4 +29,5 @@ ActiveRecord::Schema.define(version: 2022_06_03_141516) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "saved_recipes", "users"
 end
