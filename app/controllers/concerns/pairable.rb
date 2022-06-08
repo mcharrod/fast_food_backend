@@ -1,10 +1,10 @@
 module Pairable
-  def pair_my_drink(area)
+  def pair_drink_by_area(area)
     areas = ["American", "British", "Canadian", "Chinese", "Croatian",
-             "Dutch", "Egyptian", "French", "Greek", "Indian", "Irish",
-             "Italian", "Jamaican", "Japanese", "Malaysian",
-             "Mexican", "Moroccan", "Polish", "Portuguese", "Russian",
-             "Spanish", "Thai", "Tunisian", "Turkish", "Vietnamese"]
+      "Dutch", "Egyptian", "French", "Greek", "Indian", "Irish",
+      "Italian", "Jamaican", "Japanese", "Malaysian",
+      "Mexican", "Moroccan", "Polish", "Portuguese", "Russian",
+      "Spanish", "Thai", "Tunisian", "Turkish", "Vietnamese"]
     case area
     when "American"
       # old fashioned, manhattan, mint julep
@@ -85,5 +85,6 @@ module Pairable
     when "Vietnamese"
       # singapore sling, pegu club
       ["12214", "17249"].sample
+    end
   end
 end

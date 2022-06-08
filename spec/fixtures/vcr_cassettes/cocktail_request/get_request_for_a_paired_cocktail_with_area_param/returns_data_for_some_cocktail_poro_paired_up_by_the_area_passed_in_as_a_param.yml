@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://thecocktaildb.com/api/json/v1/1/lookup.php?i=11001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Jun 2022 17:37:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '952'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=S%2BmKL%2FXgiJ6ZPcqDVR8%2Brszc0vVdIzmHjWOdrlpB8yw8B3DTFs6k3iPRLX00Q7h3WlkQA6JWrCwpcMXdUfKOF%2F%2FCgIzry3Iuh8ZxMPKDe%2FI0St2aevyNnmPWJRtLBRzs%2BuwlAQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 718364db99cf18a1-EWR
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11001","strDrink":"Old Fashioned","strDrinkAlternate":null,"strTags":"IBA,Classic,Alcoholic,Expensive,Savory","strVideo":"https:\/\/www.youtube.com\/watch?v=YsE_igrPXZs","strCategory":"Cocktail","strIBA":"Unforgettables","strAlcoholic":"Alcoholic","strGlass":"Old-fashioned
+        glass","strInstructions":"Place sugar cube in old fashioned glass and saturate
+        with bitters, add a dash of plain water. Muddle until dissolved.\r\nFill the
+        glass with ice cubes and add whiskey.\r\n\r\nGarnish with orange twist, and
+        a cocktail cherry.","strInstructionsES":null,"strInstructionsDE":"Zuckerw\u00fcrfel
+        in ein old fashioned Glas geben und mit Bitterstoff s\u00e4ttigen, einen Schuss
+        Wasser hinzuf\u00fcgen. Vermischen, bis sie sich aufl\u00f6sen.","strInstructionsFR":null,"strInstructionsIT":"Mettere
+        la zolletta di zucchero nel bicchiere vecchio stile e saturare con il bitter,
+        aggiungere un goccio di acqua naturale.\r\nPestare finch\u00e9 non si scioglie.\r\nRiempi
+        il bicchiere con cubetti di ghiaccio e aggiungi il whisky.\r\nGuarnire con
+        una scorza d''arancia e una ciliegina al maraschino.","strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vrwquq1478252802.jpg","strIngredient1":"Bourbon","strIngredient2":"Angostura
+        bitters","strIngredient3":"Sugar","strIngredient4":"Water","strIngredient5":null,"strIngredient6":null,"strIngredient7":null,"strIngredient8":null,"strIngredient9":null,"strIngredient10":null,"strIngredient11":null,"strIngredient12":null,"strIngredient13":null,"strIngredient14":null,"strIngredient15":null,"strMeasure1":"4.5
+        cL","strMeasure2":"2 dashes","strMeasure3":"1 cube","strMeasure4":"dash","strMeasure5":null,"strMeasure6":null,"strMeasure7":null,"strMeasure8":null,"strMeasure9":null,"strMeasure10":null,"strMeasure11":null,"strMeasure12":null,"strMeasure13":null,"strMeasure14":null,"strMeasure15":null,"strImageSource":"https:\/\/www.thecocktaildb.com\/drink\/11001-Old-Fashioned-Cocktail","strImageAttribution":"Dave
+        M","strCreativeCommonsConfirmed":"Yes","dateModified":"2016-11-04 09:46:42"}]}'
+  recorded_at: Wed, 08 Jun 2022 17:37:10 GMT
+recorded_with: VCR 6.1.0
