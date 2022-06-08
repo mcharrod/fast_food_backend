@@ -1,8 +1,8 @@
-require 'rails_helper'
+require "rails_helper"
 
-describe 'recipe request' do
-  shared_examples 'Adheres to JSON API spec' do
-    it 'it adheres to JSON API spec' do
+describe "recipe request" do
+  shared_examples "Adheres to JSON API spec" do
+    it "it adheres to JSON API spec" do
       expect(parsed).to have_key(:type)
       expect(data).to be_a(klass)
     end
@@ -12,10 +12,10 @@ describe 'recipe request' do
     end
   end
 
-  it '#name_find' do
+  it "#name_find", :vcr do
     # it_behaves_like 'Adheres to JSON API spec'()
 
-    get '/api/v1/recipes/search?q=chicken'
+    get "/api/v1/recipes/search?q=chicken"
 
     expect(response).to be_successful
 
@@ -37,21 +37,21 @@ describe 'recipe request' do
     expect(this_recipe[:attributes][:ingredients]).to be_a(Hash)
   end
 
-  it '#id_find' do
+  it "#id_find" do
     # get '/api/v1/recipes/find?id=53051'
     #
     # expect(response.body).to eq("bingus")
   end
 
-  it '#random_find' do
+  it "#random_find" do
     # get '/api/v1/recipes/random_meal'
   end
 
-  it '#ingredient_find' do
+  it "#ingredient_find" do
     # get '/api/v1/'
   end
 
-  it '#category_find' do
+  it "#category_find" do
     # get '/api/v1/'
   end
 end
