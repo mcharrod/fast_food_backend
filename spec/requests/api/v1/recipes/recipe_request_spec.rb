@@ -13,7 +13,6 @@ describe 'recipe request' do
   end
 
   it '#name_find' do
-    # it_behaves_like 'Adheres to JSON API spec'()
 
     get '/api/v1/recipes/search?q=chicken'
 

@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://themealdb.com/api/json/v1/1/search.php?s=peas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Jun 2022 16:46:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3769'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OYlrQvuDlYanCObbR22upXZKEQOrVgGkoWKRX4tO8gbQFX%2Fn8bW%2BWo4PTaY8QQdE6XVZmf43T9WENS4efSQldxl29bKLA8QBPmlr5mIpD0%2BUjv%2BZFYSSOiw6lc6gvZF2ktwsyGHswp%2FaOvPH"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 71831b0159572ee9-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"52941","strMeal":"Red Peas Soup","strDrinkAlternate":null,"strCategory":"Beef","strArea":"Jamaican","strInstructions":"Wash
+        and rinse the dried kidney beans.. then cover with water in a deep bowl. Remember
+        as they soak they will expand to at least triple the size they were originally
+        so add a lot of water to the bowl. Soak them overnight or for at least 2 hrs
+        to make the cooking step go quicker. I tossed out the water they were soaked
+        in after it did the job.\r\n\r\nHave your butcher cut the salted pigtail into
+        2 inch pieces as it will be very difficult to cut with an ordinary kitchen
+        knife. Wash, then place a deep pot with water and bring to a boil. Cook for
+        20 minutes, then drain + rinse and repeat (boil again in water). The goal
+        is to make the pieces of pig tails tender and to remove most of the salt it
+        was cured in.\r\n\r\nTime to start the soup. Place everything in the pot (except
+        the flour and potato), then cover with water and place on a high flame to
+        bring to a boil. As it comes to a boil, skim off any scum\/froth at the top
+        and discard. Reduce the heat to a gentle boil and allow it to cook for 1 hr
+        and 15 mins.. basically until the beans are tender and start falling apart.\r\n\r\nIt\u2019s
+        now time to add the potato (and Yams etc if you\u2019re adding it) as well
+        as the coconut milk and continue cooking for 15 minutes.\r\n\r\nNow is a good
+        time to start making the basic dough for the spinner dumplings. Mix the flour
+        and water (add a pinch of salt if you want) until you have a soft\/smooth
+        dough. allow it to rest for 5 minutes, then pinch of a tablespoon at a time
+        and roll between your hands to form a cigarette shape.\r\n\r\nAdd them to
+        the pot, stir well and continue cooking for another 15 minutes on a rolling
+        boil.\r\n\r\nYou\u2019ll notice that I didn\u2019t add any salt to the pot
+        as the remaining salt from the salted pigtails will be enough to properly
+        season this dish. However you can taste and adjust accordingly. Lets recap
+        the timing part of things so you\u2019re not confused. Cook the base of the
+        soup for 1 hr and 15 minute or until tender, then add the potatoes and cook
+        for 15 minutes, then add the dumplings and cook for a further 15 minutes.
+        Keep in mind that this soup will thicken quite a bit as it cools.\r\n\r\nWhile
+        this is not a traditional recipe to any one specific island, versions of this
+        soup (sometimes called stewed peas) can be found throughout the Caribbean,
+        Latin America and Africa. A hearty bowl of this soup will surely give you
+        the sleepies (some may call it ethnic fatigue). You can certainly freeze the
+        leftovers and heat it up another day.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/sqpqtp1515365614.jpg","strTags":"Soup,SideDish","strYoutube":"https:\/\/www.youtube.com\/watch?v=1ogCfDXotMw","strIngredient1":"Kidney
+        Beans","strIngredient2":"Carrots","strIngredient3":"Spring Onions","strIngredient4":"Thyme","strIngredient5":"Onion","strIngredient6":"Black
+        Pepper","strIngredient7":"Red Pepper","strIngredient8":"Garlic Clove","strIngredient9":"Allspice","strIngredient10":"Beef","strIngredient11":"Water","strIngredient12":"Potatoes","strIngredient13":"Plain
+        Flour","strIngredient14":"Water","strIngredient15":"Coconut Milk","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"2
+        cups ","strMeasure2":"1 large","strMeasure3":"2 chopped","strMeasure4":"4
+        sprigs","strMeasure5":"1 Diced","strMeasure6":"1\/2 tsp","strMeasure7":"2
+        chopped","strMeasure8":"4 Mashed","strMeasure9":"1 tbs","strMeasure10":"2
+        Lbs","strMeasure11":"2L","strMeasure12":"4","strMeasure13":"1 cup ","strMeasure14":"1\/4
+        cup","strMeasure15":"1 cup ","strMeasure16":"","strMeasure17":"","strMeasure18":"","strMeasure19":"","strMeasure20":"","strSource":"http:\/\/caribbeanpot.com\/caribbean-red-peas-soup\/","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null},{"idMeal":"52937","strMeal":"Jerk
+        chicken with rice & peas","strDrinkAlternate":null,"strCategory":"Chicken","strArea":"Jamaican","strInstructions":"To
+        make the jerk marinade, combine all the ingredients in a food processor along
+        with 1 tsp salt, and blend to a pur\u00e9e. If you\u2019re having trouble
+        getting it to blend, just keep turning off the blender, stirring the mixture,
+        and trying again. Eventually it will start to blend up \u2013 don\u2019t be
+        tempted to add water, as you want a thick paste.\r\n\r\nTaste the jerk mixture
+        for seasoning \u2013 it should taste pretty salty, but not unpleasantly, puckering
+        salty. You can now throw in more chillies if it\u2019s not spicy enough for
+        you. If it tastes too salty and sour, try adding in a bit more brown sugar
+        until the mixture tastes well balanced.\r\n\r\nMake a few slashes in the chicken
+        thighs and pour the marinade over the meat, rubbing it into all the crevices.
+        Cover and leave to marinate overnight in the fridge.\r\n\r\nIf you want to
+        barbecue your chicken, get the coals burning 1 hr or so before you\u2019re
+        ready to cook. Authentic jerked meats are not exactly grilled as we think
+        of grilling, but sort of smoke-grilled. To get a more authentic jerk experience,
+        add some wood chips to your barbecue, and cook your chicken over slow, indirect
+        heat for 30 mins. To cook in the oven, heat to 180C\/160C fan\/gas 4. Put
+        the chicken pieces in a roasting tin with the lime halves and cook for 45
+        mins until tender and cooked through.\r\n\r\nWhile the chicken is cooking,
+        prepare the rice & peas. Rinse the rice in plenty of cold water, then tip
+        it into a large saucepan with all the remaining ingredients except the kidney
+        beans. Season with salt, add 300ml cold water and set over a high heat. Once
+        the rice begins to boil, turn it down to a medium heat, cover and cook for
+        10 mins.\r\n\r\nAdd the beans to the rice, then cover with a lid. Leave off
+        the heat for 5 mins until all the liquid is absorbed. Squeeze the roasted
+        lime over the chicken and serve with the rice & peas, and some hot sauce if
+        you like it really spicy.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/tytyxu1515363282.jpg","strTags":"Chilli,Curry","strYoutube":"https:\/\/www.youtube.com\/watch?v=qfchrS2D_v4","strIngredient1":"Chicken
+        Thighs","strIngredient2":"Lime","strIngredient3":"Spring Onions","strIngredient4":"Ginger","strIngredient5":"Garlic","strIngredient6":"Onion","strIngredient7":"Red
+        Chilli","strIngredient8":"Thyme","strIngredient9":"Lime","strIngredient10":"Soy
+        Sauce","strIngredient11":"Vegetable Oil","strIngredient12":"Brown Sugar","strIngredient13":"Allspice","strIngredient14":"Basmati
+        Rice","strIngredient15":"Coconut Milk","strIngredient16":"Spring Onions","strIngredient17":"Thyme","strIngredient18":"Garlic","strIngredient19":"Allspice","strIngredient20":"Kidney
+        Beans","strMeasure1":"12","strMeasure2":"1\/2 ","strMeasure3":"1  bunch","strMeasure4":"1
+        tbs chopped","strMeasure5":"3 cloves","strMeasure6":"1\/2 ","strMeasure7":"3
+        chopped","strMeasure8":"1\/2 teaspoon","strMeasure9":"Juice of 1","strMeasure10":"2
+        tbs","strMeasure11":"2 tbs","strMeasure12":"3 tbs","strMeasure13":"1 tbs","strMeasure14":"200g","strMeasure15":"400g","strMeasure16":"1  bunch","strMeasure17":"2
+        sprigs","strMeasure18":"2 cloves chopped","strMeasure19":"1 tbs","strMeasure20":"800g","strSource":"https:\/\/www.bbcgoodfood.com\/recipes\/2369635\/jerk-chicken-with-rice-and-peas","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null},{"idMeal":"52817","strMeal":"Stovetop
+        Eggplant With Harissa, Chickpeas, and Cumin Yogurt","strDrinkAlternate":null,"strCategory":"Vegetarian","strArea":"American","strInstructions":"Heat
+        the oil in a 12-inch skillet over high heat until shimmering. Add the eggplants
+        and lower the heat to medium. Season with salt and pepper as you rotate the
+        eggplants, browning them on all sides. Continue to cook, turning regularly,
+        until a fork inserted into the eggplant meets no resistance (you may have
+        to stand them up on their fat end to finish cooking the thickest parts), about
+        20 minutes, lowering the heat and sprinkling water into the pan as necessary
+        if the eggplants threaten to burn or smoke excessively.\r\n\r\n2.\r\nMix the
+        harissa, chickpeas and tomatoes together, then add to the eggplants. Cook
+        until the tomatoes have blistered and broken down, about 5 minutes more. Season
+        with salt and pepper and add water as necessary to thin to a saucy consistency.
+        Meanwhile, combine the yogurt and cumin in a serving bowl. Season with salt
+        and pepper.\r\n\r\n3.\r\nTop the eggplant mixture with the parsley, drizzle
+        with more extra virgin olive oil, and serve with the yogurt on the side.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/yqwtvu1487426027.jpg","strTags":"Vegetarian","strYoutube":"https:\/\/www.youtube.com\/watch?v=uYB-1xJp4lg","strIngredient1":"Olive
+        Oil","strIngredient2":"Egg Plants","strIngredient3":"Harissa","strIngredient4":"Chickpeas","strIngredient5":"Cherry
+        Tomatoes","strIngredient6":"Greek yogurt","strIngredient7":"Ground cumin","strIngredient8":"Parsley","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"4
+        tablespoons","strMeasure2":"6 small","strMeasure3":"\u00bd tablespoon","strMeasure4":"1
+        can","strMeasure5":"2 cups halved","strMeasure6":"1 1\/2 cups","strMeasure7":"1
+        tablespoon","strMeasure8":"\u00bd cup ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","strMeasure16":"","strMeasure17":"","strMeasure18":"","strMeasure19":"","strMeasure20":"","strSource":"http:\/\/www.seriouseats.com\/2014\/09\/one-pot-wonders-stovetop-eggplant-harissa-chickpeas-cumin.html","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Wed, 08 Jun 2022 16:46:46 GMT
+recorded_with: VCR 6.1.0

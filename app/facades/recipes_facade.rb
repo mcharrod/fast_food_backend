@@ -32,7 +32,6 @@ class RecipesFacade
 
   def self.find_random_recipe
     recipe = RecipeService.search_random_recipe[:meals].first
-
     Recipe.new(recipe)
   end
 
