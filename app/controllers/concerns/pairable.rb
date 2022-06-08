@@ -49,7 +49,7 @@ module Pairable
       # japanese fizz, kamikaze, pegu club
       ["11558", "11600", "17249"].sample
     when "Kenyan"
-      pair_my_drink(areas.sample)
+      pair_drink_by_area(areas.sample)
     when "Malaysian"
       # singapore sling, pegu club
       ["12214", "17249"].sample
@@ -81,7 +81,7 @@ module Pairable
       # white russian, moscow mule, black russian
       ["12528", "11009", "11102"].sample
     when "Unknown"
-      pair_my_drink(areas.sample)
+      pair_drink_by_area(areas.sample)
     when "Vietnamese"
       # singapore sling, pegu club
       ["12214", "17249"].sample
