@@ -1,8 +1,8 @@
 class CocktailsFacade
   include :pairable
 
-  def self.cocktail_by_meal_area(area)
-    drink_id = pair_my_drink(area)
-    cocktails = CocktailService.pair_cocktail_by_area(drink_id)
+  def self.cocktail_by_id(drink_id)
+    cocktail_data = CocktailService.pair_cocktail_by_area(drink_id)
+    Cocktail.new(cocktail_data)
   end
 end
