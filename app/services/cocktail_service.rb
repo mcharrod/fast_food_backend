@@ -1,7 +1,7 @@
 class CocktailService
-  def self.pair_cocktail_by_area(meal_area)
-    response = conn.get('/api/json/v1/1/filter.php') do |faraday|
-      faraday.params['i'] = meal_area
+  def self.pair_cocktail_by_area(drink_id)
+    response = conn.get('/api/json/v1/1/lookup.php?') do |faraday|
+      faraday.params['i'] = drink_id #result of pairable helper
     end
     JSON.parse(response.body, symbolize_names: true)
   end
@@ -9,6 +9,6 @@ class CocktailService
   def self.conn
     Faraday.new(url: 'https://thecocktaildb.com') do |f|
       f.adapter Faraday.default_adapter
-    end 
+    end
   end
 end
