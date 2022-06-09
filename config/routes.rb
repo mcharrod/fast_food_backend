@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       get "recipes/ingredient", to: "recipes#ingredient_find"
       get "recipes/category", to: "recipes#category_find"
       get "recipes/area", to: "recipes#area_find"
-      resources :users, except: [:index, :show]
+      resources :users, except: [:show]
       resources :saved_recipes, only: [:create, :index, :destroy]
       get "user", to: "users#show"
       get "/cocktail", to: "cocktails#index"
