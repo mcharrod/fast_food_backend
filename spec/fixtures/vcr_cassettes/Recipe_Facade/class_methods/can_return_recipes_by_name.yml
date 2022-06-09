@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 08 Jun 2022 16:44:11 GMT
+      - Thu, 09 Jun 2022 13:54:29 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,13 +38,13 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FkoIgezvcF2bF5uX8Wuftm9Pva3O%2FTJX1xE8DxBhBFRxwV5GK8OLwutg5BYe7P2EZ1SKi96Zrk8mX4Sxj3YDLiI3zuYht43KX2iTnFJSQU4sbRJ6Y3ZKlL4Oeu7otep92vmrs0JP4QuCbsmx"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=64GbqJ%2FAnWzF8a0A1HcEQePfDC%2FLwDJ0Ghp8ri2gfzA82Z6LTm7U%2FDuvaCUHkNf1wymdgnUt%2BBQYyg%2BtUejZ6zRN7s4Yht368xsgvxJEPdGR3l0eEbzTTlnBwCtQMS9WK3KFpkgLTkYicm1e"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 7183173c49e26755-DFW
+      - 718a5c05fbd86749-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -146,5 +146,5 @@ http_interactions:
         tablespoons","strMeasure2":"6 small","strMeasure3":"\u00bd tablespoon","strMeasure4":"1
         can","strMeasure5":"2 cups halved","strMeasure6":"1 1\/2 cups","strMeasure7":"1
         tablespoon","strMeasure8":"\u00bd cup ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","strMeasure16":"","strMeasure17":"","strMeasure18":"","strMeasure19":"","strMeasure20":"","strSource":"http:\/\/www.seriouseats.com\/2014\/09\/one-pot-wonders-stovetop-eggplant-harissa-chickpeas-cumin.html","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
-  recorded_at: Wed, 08 Jun 2022 16:44:11 GMT
+  recorded_at: Thu, 09 Jun 2022 13:54:29 GMT
 recorded_with: VCR 6.1.0
