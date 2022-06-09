@@ -19,10 +19,20 @@ RSpec.describe 'Recipe Facade' do
             expect(recipes[0].area).to eq (nil)
             expect(recipes[0].category).to eq (nil)
             expect(recipes[0].ingredients).to be_a(Hash)
-            
+
             expect(recipes.last).to be_a(Recipe)
-            
-            binding.pry
+        end
+
+        it 'will return an array of objects based on an ingredient search', :vcr do
+            recipes = RecipesFacade.find_recipes_by_ingredient('tomato')
+            expect(recipes).to be_an(Array)
+            expect(recipes[0]).to be_a(Recipe)
+            expect(recipes[0].name).to be_a(String)
+            expect(recipes[0].id).to be_a(String)
+            expect(recipes[0].image).to be_a(String)
+            expect(recipes[0].area).to eq (nil)
+            expect(recipes[0].category).to eq (nil)
+            expect(recipes[0].ingredients).to be_a(Hash)
         end
 
         xit 'having a bad value for search by name will return a 404', :vcr do 
