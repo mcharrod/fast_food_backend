@@ -45,8 +45,15 @@ RSpec.describe 'Recipe Facade' do
             expect(recipes[0].area).to eq (nil)
             expect(recipes[0].category).to eq (nil)
             expect(recipes[0].ingredients).to be_a(Hash)
-
             expect(recipes.last).to be_a(Recipe)
+        end
+
+        it 'will return a single recipe based on id', :vcr do 
+            recipe = RecipesFacade.find_recipe_by_id('52893')
+            expect(recipe).to be_a(Recipe)
+            expect(recipe.id).to eq("52893")
+            expect(recipe.category).to eq("Dessert")
+            expect(recipe.ingredients).to have_key("Plain Flour")
         end
 
         xit 'having a bad value for search by name will return a 404', :vcr do 
