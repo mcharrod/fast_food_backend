@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jun 2022 15:54:58 GMT
+      - Thu, 09 Jun 2022 21:25:00 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '801'
+      - '898'
       Connection:
       - keep-alive
       Vary:
@@ -38,31 +38,32 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xtmE%2FyM1JMHSrfhdmTbQ5yiFb%2FD4AUOqizUgmVzz33ZxijOWCl6MGj0vmE4%2BOAoea2grbh8T9qq7TvWraEyQnx9rpZs%2FQ9IKQsUL4Qr0dQMhBqfeMYPhBXbcF42X7NCWqOlUL4k7JIib0BjK"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=44xbJGOBK5xdHI%2F%2FPJBCaoozxC1jETtbXyLYDWgLVSAyxSX6kFoSoZqObqqzwVYL0petYjqhqcUYRLCw3DBpg%2BDWHrzO7B9OQQWHm1DHjOkyVS8iiOHbfRHArxhmPeBt"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 718b0c809ba6aa7b-DFW
+      - 718ceff6db08e6ec-EWR
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"meals":[{"idMeal":"53037","strMeal":"Coddled pork with cider","strDrinkAlternate":null,"strCategory":"Pork","strArea":"Irish","strInstructions":"STEP
-        1\r\nHeat the butter in a casserole dish until sizzling, then fry the pork
-        for 2-3 mins on each side until browned. Remove from the pan.\r\n\r\nSTEP
-        2\r\nTip the bacon, carrot, potatoes and swede into the pan, then gently fry
-        until slightly coloured. Stir in the cabbage, sit the chops back on top, add
-        the bay leaf, then pour over the cider and stock. Cover the pan, then leave
-        everything to gently simmer for 20 mins until the pork is cooked through and
-        the vegetables are tender.\r\n\r\nSTEP 3\r\nServe at the table spooned straight
-        from the dish.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/7vpsfp1608588991.jpg","strTags":null,"strYoutube":"https:\/\/www.youtube.com\/watch?v=ftn_4mc-65o","strIngredient1":"Butter","strIngredient2":"Pork
-        Chops","strIngredient3":"Bacon","strIngredient4":"Potatoes","strIngredient5":"Carrots","strIngredient6":"Swede","strIngredient7":"Cabbage","strIngredient8":"Bay
-        Leaf","strIngredient9":"Cider","strIngredient10":"Chicken Stock","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"Knob","strMeasure2":"2","strMeasure3":"4","strMeasure4":"2","strMeasure5":"1","strMeasure6":"1\/2
-        ","strMeasure7":"1\/2 ","strMeasure8":"1","strMeasure9":"100ml","strMeasure10":"100g
-        ","strMeasure11":" ","strMeasure12":" ","strMeasure13":" ","strMeasure14":"
-        ","strMeasure15":" ","strMeasure16":" ","strMeasure17":" ","strMeasure18":"
-        ","strMeasure19":" ","strMeasure20":" ","strSource":"https:\/\/www.bbcgoodfood.com\/recipes\/irish-coddled-pork-cider","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
-  recorded_at: Thu, 09 Jun 2022 15:54:58 GMT
+      string: '{"meals":[{"idMeal":"52806","strMeal":"Tandoori chicken","strDrinkAlternate":null,"strCategory":"Chicken","strArea":"Indian","strInstructions":"Mix
+        the lemon juice with the paprika and red onions in a large shallow dish. Slash
+        each chicken thigh three times, then turn them in the juice and set aside
+        for 10 mins.\r\nMix all of the marinade ingredients together and pour over
+        the chicken. Give everything a good mix, then cover and chill for at least
+        1 hr. This can be done up to a day in advance.\r\nHeat the grill. Lift the
+        chicken pieces onto a rack over a baking tray. Brush over a little oil and
+        grill for 8 mins on each side or until lightly charred and completely cooked
+        through.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/qptpvt1487339892.jpg","strTags":"Spicy,Meat","strYoutube":"https:\/\/www.youtube.com\/watch?v=-CKvt1KNU74","strIngredient1":"lemons","strIngredient2":"paprika","strIngredient3":"red
+        onions","strIngredient4":"chicken thighs","strIngredient5":"vegetable oil","strIngredient6":"Greek
+        yogurt","strIngredient7":"ginger","strIngredient8":"garlic clove","strIngredient9":"garam
+        masala","strIngredient10":"ground cumin","strIngredient11":"chilli powder","strIngredient12":"turmeric","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"2
+        Juice","strMeasure2":"4 tsp","strMeasure3":"2 finely chopped","strMeasure4":"16
+        skinnless","strMeasure5":"For brushing","strMeasure6":"300ml ","strMeasure7":"large
+        piece","strMeasure8":"4","strMeasure9":"\u00be tsp","strMeasure10":"\u00be
+        tsp","strMeasure11":"\u00bd tsp","strMeasure12":"\u00bc tsp","strMeasure13":"","strMeasure14":"","strMeasure15":"","strMeasure16":"","strMeasure17":"","strMeasure18":"","strMeasure19":"","strMeasure20":"","strSource":"http:\/\/www.bbcgoodfood.com\/recipes\/1660651\/tandoori-chicken","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 21:25:00 GMT
 recorded_with: VCR 6.1.0

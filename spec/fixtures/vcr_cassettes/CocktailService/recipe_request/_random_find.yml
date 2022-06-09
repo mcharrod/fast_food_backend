@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://themealdb.com/api/json/v1/1/random.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jun 2022 15:54:58 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '801'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xtmE%2FyM1JMHSrfhdmTbQ5yiFb%2FD4AUOqizUgmVzz33ZxijOWCl6MGj0vmE4%2BOAoea2grbh8T9qq7TvWraEyQnx9rpZs%2FQ9IKQsUL4Qr0dQMhBqfeMYPhBXbcF42X7NCWqOlUL4k7JIib0BjK"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 718b0c809ba6aa7b-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"53037","strMeal":"Coddled pork with cider","strDrinkAlternate":null,"strCategory":"Pork","strArea":"Irish","strInstructions":"STEP
+        1\r\nHeat the butter in a casserole dish until sizzling, then fry the pork
+        for 2-3 mins on each side until browned. Remove from the pan.\r\n\r\nSTEP
+        2\r\nTip the bacon, carrot, potatoes and swede into the pan, then gently fry
+        until slightly coloured. Stir in the cabbage, sit the chops back on top, add
+        the bay leaf, then pour over the cider and stock. Cover the pan, then leave
+        everything to gently simmer for 20 mins until the pork is cooked through and
+        the vegetables are tender.\r\n\r\nSTEP 3\r\nServe at the table spooned straight
+        from the dish.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/7vpsfp1608588991.jpg","strTags":null,"strYoutube":"https:\/\/www.youtube.com\/watch?v=ftn_4mc-65o","strIngredient1":"Butter","strIngredient2":"Pork
+        Chops","strIngredient3":"Bacon","strIngredient4":"Potatoes","strIngredient5":"Carrots","strIngredient6":"Swede","strIngredient7":"Cabbage","strIngredient8":"Bay
+        Leaf","strIngredient9":"Cider","strIngredient10":"Chicken Stock","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"Knob","strMeasure2":"2","strMeasure3":"4","strMeasure4":"2","strMeasure5":"1","strMeasure6":"1\/2
+        ","strMeasure7":"1\/2 ","strMeasure8":"1","strMeasure9":"100ml","strMeasure10":"100g
+        ","strMeasure11":" ","strMeasure12":" ","strMeasure13":" ","strMeasure14":"
+        ","strMeasure15":" ","strMeasure16":" ","strMeasure17":" ","strMeasure18":"
+        ","strMeasure19":" ","strMeasure20":" ","strSource":"https:\/\/www.bbcgoodfood.com\/recipes\/irish-coddled-pork-cider","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 15:54:58 GMT
+recorded_with: VCR 6.1.0

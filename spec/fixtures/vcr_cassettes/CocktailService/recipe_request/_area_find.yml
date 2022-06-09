@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jun 2022 21:25:05 GMT
+      - Thu, 09 Jun 2022 15:54:59 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,13 +38,13 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pkawQNp52xRHS3%2FFojtY8ghM9jdjTW%2FhEFzckkKXaxHDfVC2g75%2BY1Ve%2Bhly9jUBV4JDFscku8R4%2FXqylKQgglU8HGgcEiZiz9JQNzJUurmsm0jXe4msr3b2tQBD3Hxy"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=w25sYqqDc00KwnV5yezEBlSwJziGATdwi5P0NLdQOHz3DdYZfncG%2BS7e1aO1OqpF7TS8hy%2BTAuyZUGYcP32aQRdGuK5K%2F2ipQTmUvbw%2FImC24S%2FQB4GSnT4m4wWhmoIYanbts%2Bd4FEWCpN%2Bj"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 718cf013bf4d8c99-EWR
+      - 718b0c87bd410bac-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -105,5 +105,5 @@ http_interactions:
         Meatloaf","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/ypuxtw1511297463.jpg","idMeal":"52845"},{"strMeal":"Vegetarian
         Casserole","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/vptwyt1511450962.jpg","idMeal":"52863"},{"strMeal":"Vegetarian
         Chilli","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/wqurxy1511453156.jpg","idMeal":"52867"}]}'
-  recorded_at: Thu, 09 Jun 2022 21:25:05 GMT
+  recorded_at: Thu, 09 Jun 2022 15:54:59 GMT
 recorded_with: VCR 6.1.0
