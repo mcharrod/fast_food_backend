@@ -32,4 +32,11 @@ describe 'recipe api service' do
     expect(random.count).to eq(1)
     expect(random[:meals][0]).to have_key(:strMeal)
   end
+
+  it 'will return an array of recipes by the area', :vcr do 
+    area = RecipeService.search_recipes_by_area("British")
+    expect(area[:meals]).to be_an(Array)
+    expect(area[:meals][0].keys).to eq([:strMeal, :strMealThumb, :idMeal])
+    binding.pry
+  end
 end
