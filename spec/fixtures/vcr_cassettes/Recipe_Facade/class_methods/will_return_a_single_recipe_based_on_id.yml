@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://themealdb.com/api/json/v1/1/lookup.php?i=52893
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jun 2022 14:25:05 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1000'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=t1k533KsDJYjJdvj4TNy6gkr%2BDjcUiwGgu7PqqnXw%2BeS8TpxS7Mrbja1I2LaEbD%2BHH5IWfjUsC1yJHB%2FZT%2F1Q46GS40QyZvvzUH9GmN3%2BRV3jWvq6VddcKXtOVl9FOwIwU9Nm9Us2WG60%2BXW"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 718a88d9487d28b7-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"52893","strMeal":"Apple & Blackberry Crumble","strDrinkAlternate":null,"strCategory":"Dessert","strArea":"British","strInstructions":"Heat
+        oven to 190C\/170C fan\/gas 5. Tip the flour and sugar into a large bowl.
+        Add the butter, then rub into the flour using your fingertips to make a light
+        breadcrumb texture. Do not overwork it or the crumble will become heavy. Sprinkle
+        the mixture evenly over a baking sheet and bake for 15 mins or until lightly
+        coloured.\r\nMeanwhile, for the compote, peel, core and cut the apples into
+        2cm dice. Put the butter and sugar in a medium saucepan and melt together
+        over a medium heat. Cook for 3 mins until the mixture turns to a light caramel.
+        Stir in the apples and cook for 3 mins. Add the blackberries and cinnamon,
+        and cook for 3 mins more. Cover, remove from the heat, then leave for 2-3
+        mins to continue cooking in the warmth of the pan.\r\nTo serve, spoon the
+        warm fruit into an ovenproof gratin dish, top with the crumble mix, then reheat
+        in the oven for 5-10 mins. Serve with vanilla ice cream.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/xvsurr1511719182.jpg","strTags":"Pudding","strYoutube":"https:\/\/www.youtube.com\/watch?v=4vhcOwVBDO4","strIngredient1":"Plain
+        Flour","strIngredient2":"Caster Sugar","strIngredient3":"Butter","strIngredient4":"Braeburn
+        Apples","strIngredient5":"Butter","strIngredient6":"Demerara Sugar","strIngredient7":"Blackberrys","strIngredient8":"Cinnamon","strIngredient9":"Ice
+        Cream","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"120g","strMeasure2":"60g","strMeasure3":"60g","strMeasure4":"300g","strMeasure5":"30g","strMeasure6":"30g","strMeasure7":"120g","strMeasure8":"\u00bc
+        teaspoon","strMeasure9":"to serve","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","strMeasure16":"","strMeasure17":"","strMeasure18":"","strMeasure19":"","strMeasure20":"","strSource":"https:\/\/www.bbcgoodfood.com\/recipes\/778642\/apple-and-blackberry-crumble","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 14:25:05 GMT
+recorded_with: VCR 6.1.0

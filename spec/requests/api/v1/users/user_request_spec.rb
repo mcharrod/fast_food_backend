@@ -20,6 +20,14 @@ RSpec.describe "User CRUD funtionality" do
     end
   end
 
+  it 'will return a 400 status if update cant find user' do 
+    create_list(:user, 10)
+    patch "/api/v1/users/1a?name=Sue"
+    expect(response.status).to eq (400)
+    message = JSON.parse(response.body, symbolize_names: true)
+    expect(message[:text]).to eq("Could not find user")
+  end
+
   it "can retrieve a specific user " do
     create_list(:user, 10)
     create(:user, email: "rod@gmail.com")
@@ -39,7 +47,8 @@ RSpec.describe "User CRUD funtionality" do
     user = JSON.parse(response.body, symbolize_names: true)
     expect(user[:data][:attributes][:email]).to eq("beth@gmail.com")
   end
-  it "can edit a users info " do
+
+it "can edit a users info " do
     create_list(:user, 10)
     john = create(:user, name: "John")
     patch "/api/v1/users/#{john.id}?name=Sue"
@@ -47,6 +56,7 @@ RSpec.describe "User CRUD funtionality" do
     expect(sue[:data][:attributes][:name]).to eq("Sue")
     expect(john.id.to_s).to eq(sue[:data][:id])
   end
+
   it "can remove a user" do
     create_list(:user, 10)
     user = create(:user, name: "will")

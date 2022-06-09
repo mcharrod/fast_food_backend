@@ -19,6 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
+      - Thu, 09 Jun 2022 14:19:40 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -37,14 +38,13 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pAmhX1k%2BtVKp4v6PEabL35Kk0CvMsYFwJFndkMCQ4Si9P4wywjGriMtDDDqdHh5QvGgbjijgN%2BiR3JGDVtFVpxNP%2FSzUplisDpsuWY3bbedvkF64xLOzDNyAUylxXlhDA%2FHZr1LjXozp%2FuFu"}],"group":"cf-nel","max_age":604800}'
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=J2gnbiU%2FrG7o6ZCSaTNITDmtVCAQyAaU9NVAde1g1LGOTTx71l1lJL5Z91M%2Bb%2BXVxCWROIFbW8onjmIXO0nBjLPRZPkruIPs7XQPez2%2FuwRdZgQGw4BIkcWjaPhc%2B%2FiC"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H4tOjpKlq487qrKHdbeHdN2JMlKfyS5TEENSlIBO17Am6EEPi4K91vLU0dmddO%2B7%2FiakDV%2B7%2FEiIyUqZ655%2F%2Bw8E%2FmkDVYsGLMGZp8E2LPN2Bti7x9JzY%2F2Rekbvi6Q8LLqcbvD%2FouGwLv%2Fs"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 71831cf9aa3219b2-EWR
+      - 718a80e62cc693ec-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -110,5 +110,5 @@ http_interactions:
         Orange Cake","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/y4jpgq1560459207.jpg","idMeal":"52970"},{"strMeal":"Walnut
         Roll Gu\u017evara","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/u9l7k81628771647.jpg","idMeal":"53062"},{"strMeal":"White
         chocolate creme brulee","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/uryqru1511798039.jpg","idMeal":"52917"}]}'
-
+  recorded_at: Thu, 09 Jun 2022 14:19:40 GMT
 recorded_with: VCR 6.1.0

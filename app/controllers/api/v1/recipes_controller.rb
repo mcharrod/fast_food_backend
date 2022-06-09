@@ -2,17 +2,29 @@ class Api::V1::RecipesController < ApplicationController
   def random_find
     render json: RecipesSerializer.new(RecipesFacade.find_random_recipe)
   end
-
-  def name_find
-    render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_name(params[:q]))
+  
+  def id_find
+    begin 
+      render json: RecipesSerializer.new(RecipesFacade.find_recipe_by_id(params[:id]))
+    rescue NoMethodError 
+      render json: {text: "Search produced no results"}, status: 404
+    end 
   end
 
-  def id_find
-    render json: RecipesSerializer.new(RecipesFacade.find_recipe_by_id(params[:id]))
+  def name_find
+    begin 
+      render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_name(params[:q]))
+    rescue NoMethodError
+      render json: {text: "Search produced no results"},  status: 404
+    end 
   end
 
   def ingredient_find
-    render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_ingredient(params[:q]))
+    begin 
+      render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_ingredient(params[:q]))
+    rescue NoMethodError 
+      render json: {text: "Search produced no results"},  status: 404
+    end 
   end
 
   def category_find

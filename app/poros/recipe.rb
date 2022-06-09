@@ -33,6 +33,6 @@ class Recipe
       end
     end
 
-    Hash[ingredient_values.zip(measurement_values)]
+    Hash[ingredient_values.zip(measurement_values)].compact
   end
 end

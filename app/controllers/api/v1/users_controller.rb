@@ -6,23 +6,23 @@ class Api::V1::UsersController < ApplicationController
     render json: UserSerializer.new(users)
   end
 
+  def update
+    begin 
+      render json: UserSerializer.new(User.update(params[:id], user_params))
+    rescue ActiveRecord::RecordNotFound
+      render json: {text: "Could not find user"}, status: 400
+    end
+  end
+
   def show
     user = User.find_by(email: params[:email])
     render json: UserSerializer.new(user)
   end
 
+
   def create
     user = User.find_or_create_by!(name: params[:name], email: params[:email])
     render json: UserSerializer.new(user)
-  end
-
-  def update
-    user = User.update(params[:id], user_params)
-    if user.save
-      render json: UserSerializer.new(user)
-    else
-      render status: 400
-    end
   end
 
   def destroy
