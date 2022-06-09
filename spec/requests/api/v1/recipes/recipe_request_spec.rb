@@ -109,8 +109,17 @@ describe 'recipe request' do
     end
   end 
 
-  xit 'returns a status 404 if query isnt valid', :vcr do 
+  it 'returns a status 404 if name search query produces no results', :vcr do 
     get '/api/v1/recipes/search?q=foobar'
-    # binding.pry
+    expect(response.status).to eq(404)
+    parsed = JSON.parse(response.body, symbolize_names: true)
+    expect(parsed[:text]).to eq("Search produced no results")
+  end
+
+  it 'returns a status of 404 if ingredient search produces no results', :vcr do 
+    get '/api/v1/recipes/ingredient?q=foobar'
+    expect(response.status).to eq(404)
+    parsed = JSON.parse(response.body, symbolize_names: true)
+    expect(parsed[:text]).to eq("Search produced no results")
   end
 end

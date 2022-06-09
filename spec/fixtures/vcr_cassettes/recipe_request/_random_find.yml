@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jun 2022 15:37:36 GMT
+      - Thu, 09 Jun 2022 15:54:58 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1172'
+      - '801'
       Connection:
       - keep-alive
       Vary:
@@ -38,40 +38,31 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gVnJ40EEs07hwZUy%2BSJ0i8x%2B7cAT2G4O8y4PKZnY0X3Vt6j8u1O2QSBfwVIPnYLIcjwnwHNRITOrlvqPc43FZteVC3VD9MfZSTPK7%2B%2FQVUv6p4Hxg6oDD3djGqWAIieW604XyU0u6hk7Aok%2F"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xtmE%2FyM1JMHSrfhdmTbQ5yiFb%2FD4AUOqizUgmVzz33ZxijOWCl6MGj0vmE4%2BOAoea2grbh8T9qq7TvWraEyQnx9rpZs%2FQ9IKQsUL4Qr0dQMhBqfeMYPhBXbcF42X7NCWqOlUL4k7JIib0BjK"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 718af31399a5aa70-DFW
+      - 718b0c809ba6aa7b-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"meals":[{"idMeal":"53055","strMeal":"Cevapi Sausages","strDrinkAlternate":null,"strCategory":"Beef","strArea":"Croatian","strInstructions":"Place
-        the ground meat in a bowl. Chop the onion very finely and grate the garlic
-        cloves. Add to the bowl. Add the chopped parsley, all sorts of paprika, baking
-        soda, dried breadcrumbs, water, Vegeta, salt, and pepper.\r\nMix well with
-        the hand mixer fitted with the dough hooks. Cover the bowl with cling film\/
-        plastic foil and leave to rest for 1 or 2 hours in the refrigerator.\r\nTake
-        portions of the meat mixture, about 50-55 g\/ 1.7-1.9 oz\/ \u00bc cup portions,
-        and form the cevapi. The rolls should be about as thick as your thumb and
-        about 7-10 cm\/ 3-4 inches long. I had 18 sausages. The recipe can be easily
-        doubled.\r\nGrill the cevapcici on the hot grill pan or on the barbecue for
-        about 12-14 minutes, turning them several times in between, or until brown
-        and cooked through. I checked by cutting one in the middle and then grilling
-        the following batches for the same period of time.\r\nServe hot as suggested
-        above. The cevapcici can be reheated in the oven at 180 degrees Celsius\/
-        350 degrees Fahrenheit for about 10 minutes or until heated through. Check
-        one, if it is not hot enough, give the sausages a few more minutes.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/vc08jn1628769553.jpg","strTags":"Sausages","strYoutube":"https:\/\/www.youtube.com\/watch?v=_MpSxSgS7f8","strIngredient1":"Minced
-        Beef","strIngredient2":"Minced Pork","strIngredient3":"Onion","strIngredient4":"Garlic","strIngredient5":"Parsley","strIngredient6":"Paprika","strIngredient7":"Baking
-        Powder","strIngredient8":"Breadcrumbs","strIngredient9":"Water","strIngredient10":"Vegetable
-        Stock Cube","strIngredient11":"Salt","strIngredient12":"Pepper","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"500g","strMeasure2":"250g","strMeasure3":"1","strMeasure4":"4
-        cloves","strMeasure5":"3 tblsp chopped","strMeasure6":"1 tbs","strMeasure7":"3\/4
-        teaspoon","strMeasure8":"2 tbs","strMeasure9":"3 tbs","strMeasure10":"1","strMeasure11":"1
-        tsp ","strMeasure12":"1 tsp ","strMeasure13":" ","strMeasure14":" ","strMeasure15":"
-        ","strMeasure16":" ","strMeasure17":" ","strMeasure18":" ","strMeasure19":"
-        ","strMeasure20":" ","strSource":"https:\/\/whereismyspoon.co\/cevapi-or-cevapcici-recipe-grilled-sausages-croatian-food\/","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
-  recorded_at: Thu, 09 Jun 2022 15:37:36 GMT
+      string: '{"meals":[{"idMeal":"53037","strMeal":"Coddled pork with cider","strDrinkAlternate":null,"strCategory":"Pork","strArea":"Irish","strInstructions":"STEP
+        1\r\nHeat the butter in a casserole dish until sizzling, then fry the pork
+        for 2-3 mins on each side until browned. Remove from the pan.\r\n\r\nSTEP
+        2\r\nTip the bacon, carrot, potatoes and swede into the pan, then gently fry
+        until slightly coloured. Stir in the cabbage, sit the chops back on top, add
+        the bay leaf, then pour over the cider and stock. Cover the pan, then leave
+        everything to gently simmer for 20 mins until the pork is cooked through and
+        the vegetables are tender.\r\n\r\nSTEP 3\r\nServe at the table spooned straight
+        from the dish.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/7vpsfp1608588991.jpg","strTags":null,"strYoutube":"https:\/\/www.youtube.com\/watch?v=ftn_4mc-65o","strIngredient1":"Butter","strIngredient2":"Pork
+        Chops","strIngredient3":"Bacon","strIngredient4":"Potatoes","strIngredient5":"Carrots","strIngredient6":"Swede","strIngredient7":"Cabbage","strIngredient8":"Bay
+        Leaf","strIngredient9":"Cider","strIngredient10":"Chicken Stock","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"Knob","strMeasure2":"2","strMeasure3":"4","strMeasure4":"2","strMeasure5":"1","strMeasure6":"1\/2
+        ","strMeasure7":"1\/2 ","strMeasure8":"1","strMeasure9":"100ml","strMeasure10":"100g
+        ","strMeasure11":" ","strMeasure12":" ","strMeasure13":" ","strMeasure14":"
+        ","strMeasure15":" ","strMeasure16":" ","strMeasure17":" ","strMeasure18":"
+        ","strMeasure19":" ","strMeasure20":" ","strSource":"https:\/\/www.bbcgoodfood.com\/recipes\/irish-coddled-pork-cider","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 15:54:58 GMT
 recorded_with: VCR 6.1.0

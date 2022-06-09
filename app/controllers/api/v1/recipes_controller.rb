@@ -15,12 +15,16 @@ class Api::V1::RecipesController < ApplicationController
     begin 
       render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_name(params[:q]))
     rescue NoMethodError
-      render json: {text: "Search produced no results", status: 404}
+      render json: {text: "Search produced no results"},  status: 404
     end 
   end
 
   def ingredient_find
-    render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_ingredient(params[:q]))
+    begin 
+      render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_ingredient(params[:q]))
+    rescue NoMethodError 
+      render json: {text: "Search produced no results"},  status: 404
+    end 
   end
 
   def category_find
