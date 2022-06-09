@@ -35,4 +35,9 @@ RSpec.describe "User CRUD funtionality" do
         expect(User.count).to eq(10)
         expect(User.ids).not_to include(user.id)
     end
+
+    it 'will return a 400 status if update fails' do 
+        create_list(:user, 10)
+        patch "/api/v1/users/1a?name=Sue"
+    end
 end

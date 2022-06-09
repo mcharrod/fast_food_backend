@@ -11,11 +11,10 @@ class Api::V1::UsersController <ApplicationController
     end
 
     def update
-        user = User.update(params[:id], user_params)
-        if user.save
-            render json: UserSerializer.new(user)
-        else
-            render status: 400
+        begin 
+            render json: UserSerializer.new(User.update(params[:id], user_params))
+        rescue ActiveRecord::RecordNotFound
+            render json: {text: "Could not update user"}, status: 400
         end
     end
     def destroy

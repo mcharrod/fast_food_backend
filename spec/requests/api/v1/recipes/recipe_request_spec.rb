@@ -1,16 +1,6 @@
 require 'rails_helper'
 
 describe 'recipe request' do
-  shared_examples 'Adheres to JSON API spec' do
-    it 'it adheres to JSON API spec' do
-      expect(parsed).to have_key(:type)
-      expect(data).to be_a(klass)
-    end
-    it "returns status 200" do
-      expect(response).to be_successful
-    end
-  end
-  
   it '#name_find', :vcr do
     get '/api/v1/recipes/search?q=chicken'
     expect(response).to be_successful
