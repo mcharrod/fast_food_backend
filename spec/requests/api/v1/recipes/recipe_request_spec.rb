@@ -43,8 +43,19 @@ describe 'recipe request' do
     expect(recipe[:attributes][:ingredients]).to be_a(Hash)
   end
   
-  xit '#random_find' do
-    # get '/api/v1/recipes/random_meal'
+  it '#random_find', :vcr do
+    get '/api/v1/recipes/random_meal'
+    expect(response).to be_successful
+    recipe = JSON.parse(response.body, symbolize_names: true)[:data]
+    expect(recipe).to have_key(:type)
+    expect(recipe).to have_key(:id)
+    expect(recipe).to have_key(:attributes)
+    expect(recipe[:attributes]).to have_key(:area)
+    expect(recipe[:attributes]).to have_key(:name)
+    expect(recipe[:attributes]).to have_key(:category)
+    expect(recipe[:attributes]).to have_key(:ingredients)
+    expect(recipe[:attributes]).to have_key(:instructions)
+    expect(recipe[:attributes][:ingredients]).to be_a(Hash)
   end
   
   xit '#ingredient_find' do

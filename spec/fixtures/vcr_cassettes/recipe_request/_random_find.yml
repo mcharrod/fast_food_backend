@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://themealdb.com/api/json/v1/1/random.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jun 2022 15:37:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1172'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gVnJ40EEs07hwZUy%2BSJ0i8x%2B7cAT2G4O8y4PKZnY0X3Vt6j8u1O2QSBfwVIPnYLIcjwnwHNRITOrlvqPc43FZteVC3VD9MfZSTPK7%2B%2FQVUv6p4Hxg6oDD3djGqWAIieW604XyU0u6hk7Aok%2F"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 718af31399a5aa70-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"53055","strMeal":"Cevapi Sausages","strDrinkAlternate":null,"strCategory":"Beef","strArea":"Croatian","strInstructions":"Place
+        the ground meat in a bowl. Chop the onion very finely and grate the garlic
+        cloves. Add to the bowl. Add the chopped parsley, all sorts of paprika, baking
+        soda, dried breadcrumbs, water, Vegeta, salt, and pepper.\r\nMix well with
+        the hand mixer fitted with the dough hooks. Cover the bowl with cling film\/
+        plastic foil and leave to rest for 1 or 2 hours in the refrigerator.\r\nTake
+        portions of the meat mixture, about 50-55 g\/ 1.7-1.9 oz\/ \u00bc cup portions,
+        and form the cevapi. The rolls should be about as thick as your thumb and
+        about 7-10 cm\/ 3-4 inches long. I had 18 sausages. The recipe can be easily
+        doubled.\r\nGrill the cevapcici on the hot grill pan or on the barbecue for
+        about 12-14 minutes, turning them several times in between, or until brown
+        and cooked through. I checked by cutting one in the middle and then grilling
+        the following batches for the same period of time.\r\nServe hot as suggested
+        above. The cevapcici can be reheated in the oven at 180 degrees Celsius\/
+        350 degrees Fahrenheit for about 10 minutes or until heated through. Check
+        one, if it is not hot enough, give the sausages a few more minutes.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/vc08jn1628769553.jpg","strTags":"Sausages","strYoutube":"https:\/\/www.youtube.com\/watch?v=_MpSxSgS7f8","strIngredient1":"Minced
+        Beef","strIngredient2":"Minced Pork","strIngredient3":"Onion","strIngredient4":"Garlic","strIngredient5":"Parsley","strIngredient6":"Paprika","strIngredient7":"Baking
+        Powder","strIngredient8":"Breadcrumbs","strIngredient9":"Water","strIngredient10":"Vegetable
+        Stock Cube","strIngredient11":"Salt","strIngredient12":"Pepper","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"500g","strMeasure2":"250g","strMeasure3":"1","strMeasure4":"4
+        cloves","strMeasure5":"3 tblsp chopped","strMeasure6":"1 tbs","strMeasure7":"3\/4
+        teaspoon","strMeasure8":"2 tbs","strMeasure9":"3 tbs","strMeasure10":"1","strMeasure11":"1
+        tsp ","strMeasure12":"1 tsp ","strMeasure13":" ","strMeasure14":" ","strMeasure15":"
+        ","strMeasure16":" ","strMeasure17":" ","strMeasure18":" ","strMeasure19":"
+        ","strMeasure20":" ","strSource":"https:\/\/whereismyspoon.co\/cevapi-or-cevapcici-recipe-grilled-sausages-croatian-food\/","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 15:37:36 GMT
+recorded_with: VCR 6.1.0
