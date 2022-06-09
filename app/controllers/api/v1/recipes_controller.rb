@@ -7,7 +7,7 @@ class Api::V1::RecipesController < ApplicationController
     begin 
       render json: RecipesSerializer.new(RecipesFacade.find_recipe_by_id(params[:id]))
     rescue NoMethodError 
-      render json: {text: "Hahah caught you! Sneaky Sneak, can't fool us", status: 404}
+      render json: {text: "Search produced no results"}, status: 404
     end 
   end
 

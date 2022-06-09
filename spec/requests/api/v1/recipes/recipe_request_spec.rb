@@ -122,4 +122,10 @@ describe 'recipe request' do
     parsed = JSON.parse(response.body, symbolize_names: true)
     expect(parsed[:text]).to eq("Search produced no results")
   end
+  it 'returns a status of 404 if id search produces no results', :vcr do 
+    get '/api/v1/recipes/find?id=123'
+    expect(response.status).to eq(404)
+    parsed = JSON.parse(response.body, symbolize_names: true)
+    expect(parsed[:text]).to eq("Search produced no results")
+  end
 end
