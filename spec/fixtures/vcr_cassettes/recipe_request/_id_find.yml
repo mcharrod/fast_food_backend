@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jun 2022 14:25:05 GMT
+      - Thu, 09 Jun 2022 15:15:37 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,13 +38,13 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=t1k533KsDJYjJdvj4TNy6gkr%2BDjcUiwGgu7PqqnXw%2BeS8TpxS7Mrbja1I2LaEbD%2BHH5IWfjUsC1yJHB%2FZT%2F1Q46GS40QyZvvzUH9GmN3%2BRV3jWvq6VddcKXtOVl9FOwIwU9Nm9Us2WG60%2BXW"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dzfSDYzEYOgufjhwGUBlHURNbxtRJH%2BfYTj7UjxGIeFsDUeq3zp5qVpdolcBqPjzOEUIEApZR8OwMNR05mQEPcemsn9zsM%2Fmo9KSdMkoEKuRZW9YWhuUp%2Fo2txlmu9OlxhqyhxSkXp541w0b"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 718a88d9487d28b7-DFW
+      - 718ad2dced3893d1-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -66,5 +66,5 @@ http_interactions:
         Apples","strIngredient5":"Butter","strIngredient6":"Demerara Sugar","strIngredient7":"Blackberrys","strIngredient8":"Cinnamon","strIngredient9":"Ice
         Cream","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"120g","strMeasure2":"60g","strMeasure3":"60g","strMeasure4":"300g","strMeasure5":"30g","strMeasure6":"30g","strMeasure7":"120g","strMeasure8":"\u00bc
         teaspoon","strMeasure9":"to serve","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","strMeasure16":"","strMeasure17":"","strMeasure18":"","strMeasure19":"","strMeasure20":"","strSource":"https:\/\/www.bbcgoodfood.com\/recipes\/778642\/apple-and-blackberry-crumble","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
-  recorded_at: Thu, 09 Jun 2022 14:25:05 GMT
+  recorded_at: Thu, 09 Jun 2022 15:15:37 GMT
 recorded_with: VCR 6.1.0

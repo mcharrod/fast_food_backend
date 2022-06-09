@@ -56,7 +56,7 @@ RSpec.describe 'Recipe Facade' do
             expect(recipe.ingredients).to have_key("Plain Flour")
         end
 
-        it 'will return a random recipe', :vcr do 
+        it 'will return a random recipe as a Recipe', :vcr do 
             recipe = RecipesFacade.find_random_recipe
             expect(recipe).to be_a(Recipe)
             expect(recipe.id).to be_a(String)

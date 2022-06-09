@@ -6,58 +6,57 @@ describe 'recipe request' do
       expect(parsed).to have_key(:type)
       expect(data).to be_a(klass)
     end
-
     it "returns status 200" do
       expect(response).to be_successful
     end
   end
-
-  it '#name_find' do
-
-    get '/api/v1/recipes/search?q=chicken'
-
-    expect(response).to be_successful
-
-    parsed = JSON.parse(response.body, symbolize_names: true)
-
-    this_recipe = parsed[:data].first
-
-    expect(parsed[:data].last[:type]).to eq("recipe")
-
-    expect(this_recipe).to have_key(:type)
-    expect(this_recipe).to have_key(:id)
-    expect(this_recipe).to have_key(:attributes)
-
-    expect(this_recipe[:attributes]).to have_key(:area)
-    expect(this_recipe[:attributes]).to have_key(:name)
-    expect(this_recipe[:attributes]).to have_key(:category)
-    expect(this_recipe[:attributes]).to have_key(:ingredients)
-    expect(this_recipe[:attributes]).to have_key(:instructions)
-    expect(this_recipe[:attributes][:ingredients]).to be_a(Hash)
-  end
-
-  it 'returns a status 404 if query isnt valid', :vcr do 
-    get '/api/v1/recipes/search?q=foobar'
-    binding.pry
-  end
-
   
-
-  it '#id_find' do
-    # get '/api/v1/recipes/find?id=53051'
-    #
-    # expect(response.body).to eq("bingus")
+  it '#name_find', :vcr do
+    get '/api/v1/recipes/search?q=chicken'
+    expect(response).to be_successful
+    parsed = JSON.parse(response.body, symbolize_names: true)[:data]
+    parsed.each do |recipe|
+      expect(recipe).to have_key(:type)
+      expect(recipe).to have_key(:id)
+      expect(recipe).to have_key(:attributes)
+      expect(recipe[:attributes]).to have_key(:area)
+      expect(recipe[:attributes]).to have_key(:name)
+      expect(recipe[:attributes]).to have_key(:category)
+      expect(recipe[:attributes]).to have_key(:ingredients)
+      expect(recipe[:attributes]).to have_key(:instructions)
+      expect(recipe[:attributes][:ingredients]).to be_a(Hash)
+    end 
   end
-
-  it '#random_find' do
+  
+  it '#id_find', :vcr do
+    get '/api/v1/recipes/find?id=52893'
+    expect(response).to be_successful
+    recipe = JSON.parse(response.body, symbolize_names: true)[:data]
+    expect(recipe).to have_key(:type)
+    expect(recipe).to have_key(:id)
+    expect(recipe).to have_key(:attributes)
+    expect(recipe[:attributes]).to have_key(:area)
+    expect(recipe[:attributes]).to have_key(:name)
+    expect(recipe[:attributes]).to have_key(:category)
+    expect(recipe[:attributes]).to have_key(:ingredients)
+    expect(recipe[:attributes]).to have_key(:instructions)
+    expect(recipe[:attributes][:ingredients]).to be_a(Hash)
+  end
+  
+  xit '#random_find' do
     # get '/api/v1/recipes/random_meal'
   end
-
-  it '#ingredient_find' do
+  
+  xit '#ingredient_find' do
+    # get '/api/v1/'
+  end
+  
+  xit '#category_find' do
     # get '/api/v1/'
   end
 
-  it '#category_find' do
-    # get '/api/v1/'
+  xit 'returns a status 404 if query isnt valid', :vcr do 
+    get '/api/v1/recipes/search?q=foobar'
+    # binding.pry
   end
 end
