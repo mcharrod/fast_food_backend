@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://themealdb.com/api/json/v1/1/random.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jun 2022 14:32:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1269'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tCNZEQMSojP1CYftxQQeQN91CE7%2BrWSQQxoYHkLbhLOHnzmCCpk%2F4MgOylcFU%2BJvivCWx8Ex4gGcizfsQR999sRYWYozQ90zqCUrl0hTOzFFG6H5WW7FMCA44uXVekB4ElO3Kyk5oqjABeyS"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 718a93fb2d91678c-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"52934","strMeal":"Chicken Basquaise","strDrinkAlternate":null,"strCategory":"Chicken","strArea":"French","strInstructions":"Preheat
+        the oven to 180\u00b0C\/Gas mark 4. Have the chicken joints ready to cook.
+        Heat the butter and 3 tbsp olive oil in a flameproof casserole or large frying
+        pan. Brown the chicken pieces in batches on both sides, seasoning them with
+        salt and pepper as you go. Don''t crowd the pan - fry the chicken in small
+        batches, removing the pieces to kitchen paper as they are done.\r\n\r\nAdd
+        a little more olive oil to the casserole and fry the onions over a medium
+        heat for 10 minutes, stirring frequently, until softened but not browned.
+        Add the rest of the oil, then the peppers and cook for another 5 minutes.\r\n\r\nAdd
+        the chorizo, sun-dried tomatoes and garlic and cook for 2-3 minutes. Add the
+        rice, stirring to ensure it is well coated in the oil. Stir in the tomato
+        paste, paprika, bay leaves and chopped thyme. Pour in the stock and wine.
+        When the liquid starts to bubble, turn the heat down to a gentle simmer. Press
+        the rice down into the liquid if it isn''t already submerged and place the
+        chicken on top. Add the lemon wedges and olives around the chicken.\r\n\r\nCover
+        and cook in the oven for 50 minutes. The rice should be cooked but still have
+        some bite, and the chicken should have juices that run clear when pierced
+        in the thickest part with a knife. If not, cook for another 5 minutes and
+        check again.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/wruvqv1511880994.jpg","strTags":"Meat","strYoutube":"https:\/\/www.youtube.com\/watch?v=emfm6TwsVhg","strIngredient1":"Chicken","strIngredient2":"Butter","strIngredient3":"Olive
+        Oil","strIngredient4":"Red Onions","strIngredient5":"Red Pepper","strIngredient6":"Chorizo","strIngredient7":"Sun-Dried
+        Tomatoes","strIngredient8":"Garlic","strIngredient9":"Basmati Rice","strIngredient10":"Tomato
+        Puree","strIngredient11":"Paprika","strIngredient12":"Bay Leaves","strIngredient13":"Thyme","strIngredient14":"Chicken
+        Stock","strIngredient15":"Dry White Wine","strIngredient16":"Lemons","strIngredient17":"Black
+        Olives","strIngredient18":"Salt","strIngredient19":"Pepper","strIngredient20":"","strMeasure1":"1.5kg","strMeasure2":"25g","strMeasure3":"6
+        tblsp","strMeasure4":"2 sliced","strMeasure5":"3 Large","strMeasure6":"130g","strMeasure7":"8","strMeasure8":"6
+        cloves sliced","strMeasure9":"300g","strMeasure10":"drizzle","strMeasure11":"\u00bd
+        tsp","strMeasure12":"4","strMeasure13":"Handful","strMeasure14":"350ml","strMeasure15":"180g","strMeasure16":"2","strMeasure17":"100g
+        ","strMeasure18":"to serve","strMeasure19":"to serve","strMeasure20":"","strSource":"https:\/\/www.rivercottage.net\/recipes\/chicken-basquaise","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 14:32:41 GMT
+recorded_with: VCR 6.1.0

@@ -56,19 +56,12 @@ RSpec.describe 'Recipe Facade' do
             expect(recipe.ingredients).to have_key("Plain Flour")
         end
 
-        xit 'having a bad value for search by name will return a 404', :vcr do 
-            recipe_name = "foobar"
-            RecipesFacade.find_recipes_by_name(recipe_name)
-        end
-        
-        xit 'having a bad value for ingredient will return a 404', :vcr do 
-            ingredient = "foobar"
-            RecipesFacade.find_recipes_by_ingredient(ingredient)
-        end
-
-        xit 'having a bad value for id will return a 404', :vcr do 
-            id = 548846512545
-            RecipesFacade.find_recipe_by_id(id)
+        it 'will return a random recipe', :vcr do 
+            recipe = RecipesFacade.find_random_recipe
+            expect(recipe).to be_a(Recipe)
+            expect(recipe.id).to be_a(String)
+            expect(recipe.category).to be_a(String)
+            expect(recipe.ingredients).to be_a(Hash)
         end
     end 
 end
