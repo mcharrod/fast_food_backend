@@ -1,8 +1,11 @@
-require 'rails_helper'
+require "rails_helper"
 
-describe 'recipe request' do
-  it '#name_find', :vcr do
-    get '/api/v1/recipes/search?q=chicken'
+describe "recipe request" do
+  it "#name_find", :vcr do
+    # it_behaves_like 'Adheres to JSON API spec'()
+
+    get "/api/v1/recipes/search?q=chicken"
+    
     expect(response).to be_successful
     parsed = JSON.parse(response.body, symbolize_names: true)[:data]
     parsed.each do |recipe|
@@ -112,6 +115,7 @@ describe 'recipe request' do
     parsed = JSON.parse(response.body, symbolize_names: true)
     expect(parsed[:text]).to eq("Search produced no results")
   end
+  
   it 'returns a status of 404 if id search produces no results', :vcr do 
     get '/api/v1/recipes/find?id=123'
     expect(response.status).to eq(404)
