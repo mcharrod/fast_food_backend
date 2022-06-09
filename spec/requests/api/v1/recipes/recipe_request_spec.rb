@@ -58,13 +58,39 @@ describe 'recipe request' do
     expect(recipe[:attributes][:ingredients]).to be_a(Hash)
   end
   
-  xit '#ingredient_find' do
-    # get '/api/v1/'
+  it '#ingredient_find', :vcr do
+    get '/api/v1/recipes/ingredient?q=tomato'
+    expect(response).to be_successful
+    parsed = JSON.parse(response.body, symbolize_names: true)[:data]
+    parsed.each do |recipe|
+      expect(recipe).to have_key(:type)
+      expect(recipe).to have_key(:id)
+      expect(recipe).to have_key(:attributes)
+      expect(recipe[:attributes]).to have_key(:area)
+      expect(recipe[:attributes]).to have_key(:name)
+      expect(recipe[:attributes]).to have_key(:category)
+      expect(recipe[:attributes]).to have_key(:ingredients)
+      expect(recipe[:attributes]).to have_key(:instructions)
+      expect(recipe[:attributes][:ingredients]).to be_a(Hash)
+    end 
   end
   
-  xit '#category_find' do
-    # get '/api/v1/'
-  end
+  it '#category_find', :vcr do
+    get '/api/v1/recipes/category?q=dessert'
+    expect(response).to be_successful
+    parsed = JSON.parse(response.body, symbolize_names: true)[:data]
+    parsed.each do |recipe|
+      expect(recipe).to have_key(:type)
+      expect(recipe).to have_key(:id)
+      expect(recipe).to have_key(:attributes)
+      expect(recipe[:attributes]).to have_key(:area)
+      expect(recipe[:attributes]).to have_key(:name)
+      expect(recipe[:attributes]).to have_key(:category)
+      expect(recipe[:attributes]).to have_key(:ingredients)
+      expect(recipe[:attributes]).to have_key(:instructions)
+      expect(recipe[:attributes][:ingredients]).to be_a(Hash)  
+    end
+  end 
 
   xit 'returns a status 404 if query isnt valid', :vcr do 
     get '/api/v1/recipes/search?q=foobar'
