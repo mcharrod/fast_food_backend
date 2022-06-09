@@ -37,6 +37,5 @@ describe 'recipe api service' do
     area = RecipeService.search_recipes_by_area("British")
     expect(area[:meals]).to be_an(Array)
     expect(area[:meals][0].keys).to eq([:strMeal, :strMealThumb, :idMeal])
-    binding.pry
   end
 end

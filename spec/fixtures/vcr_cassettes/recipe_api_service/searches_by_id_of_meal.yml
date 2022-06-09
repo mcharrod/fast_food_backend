@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://themealdb.com/api/json/v1/1/lookup.php?i=52772
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jun 2022 16:07:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1083'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=d1%2BjhxsIEn36Xb1VC1HZrxYSyrKoTOJLbEHeJ5TINOLv240rn5%2FY%2Fbj1XdmZiwM9T6Iwi06GAd92J4O%2FCPaq%2FwSqP3VUiU57TZ9YmWdGqr49xEIziT2YIuPDbpqCuWYXKNpnilQgm8ZTUEEO"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 718b1f157af5671d-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"52772","strMeal":"Teriyaki Chicken Casserole","strDrinkAlternate":null,"strCategory":"Chicken","strArea":"Japanese","strInstructions":"Preheat
+        oven to 350\u00b0 F. Spray a 9x13-inch baking pan with non-stick spray.\r\nCombine
+        soy sauce, \u00bd cup water, brown sugar, ginger and garlic in a small saucepan
+        and cover. Bring to a boil over medium heat. Remove lid and cook for one minute
+        once boiling.\r\nMeanwhile, stir together the corn starch and 2 tablespoons
+        of water in a separate dish until smooth. Once sauce is boiling, add mixture
+        to the saucepan and stir to combine. Cook until the sauce starts to thicken
+        then remove from heat.\r\nPlace the chicken breasts in the prepared pan. Pour
+        one cup of the sauce over top of chicken. Place chicken in oven and bake 35
+        minutes or until cooked through. Remove from oven and shred chicken in the
+        dish using two forks.\r\n*Meanwhile, steam or cook the vegetables according
+        to package directions.\r\nAdd the cooked vegetables and rice to the casserole
+        dish with the chicken. Add most of the remaining sauce, reserving a bit to
+        drizzle over the top when serving. Gently toss everything together in the
+        casserole dish until combined. Return to oven and cook 15 minutes. Remove
+        from oven and let stand 5 minutes before serving. Drizzle each serving with
+        remaining sauce. Enjoy!","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/wvpsxx1468256321.jpg","strTags":"Meat,Casserole","strYoutube":"https:\/\/www.youtube.com\/watch?v=4aZr5hZXP_s","strIngredient1":"soy
+        sauce","strIngredient2":"water","strIngredient3":"brown sugar","strIngredient4":"ground
+        ginger","strIngredient5":"minced garlic","strIngredient6":"cornstarch","strIngredient7":"chicken
+        breasts","strIngredient8":"stir-fry vegetables","strIngredient9":"brown rice","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":null,"strIngredient17":null,"strIngredient18":null,"strIngredient19":null,"strIngredient20":null,"strMeasure1":"3\/4
+        cup","strMeasure2":"1\/2 cup","strMeasure3":"1\/4 cup","strMeasure4":"1\/2
+        teaspoon","strMeasure5":"1\/2 teaspoon","strMeasure6":"4 Tablespoons","strMeasure7":"2","strMeasure8":"1
+        (12 oz.)","strMeasure9":"3 cups","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","strMeasure16":null,"strMeasure17":null,"strMeasure18":null,"strMeasure19":null,"strMeasure20":null,"strSource":null,"strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 16:07:39 GMT
+recorded_with: VCR 6.1.0

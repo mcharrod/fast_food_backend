@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://themealdb.com/api/json/v1/1/random.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jun 2022 16:07:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '915'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UYnerB0aYbQEzlC4A9ykN%2FHubd5oB7cSneWdmi0VeYbyD%2FHPShfkOl6a%2F4myhfzZzUPWNfS7uPPP12oXYE2tBQl10z4BizRj7OPtq2zGZv43xhYDieYCTlD%2Fghgt9uxJnbWSTKpt25btaVrB"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 718b1f0bee430f42-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"52770","strMeal":"Spaghetti Bolognese","strDrinkAlternate":null,"strCategory":"Beef","strArea":"Italian","strInstructions":"Put
+        the onion and oil in a large pan and fry over a fairly high heat for 3-4 mins.
+        Add the garlic and mince and fry until they both brown. Add the mushrooms
+        and herbs, and cook for another couple of mins.\r\n\r\nStir in the tomatoes,
+        beef stock, tomato ketchup or pur\u00e9e, Worcestershire sauce and seasoning.
+        Bring to the boil, then reduce the heat, cover and simmer, stirring occasionally,
+        for 30 mins.\r\n\r\nMeanwhile, cook the spaghetti in a large pan of boiling,
+        salted water, according to packet instructions. Drain well, run hot water
+        through it, put it back in the pan and add a dash of olive oil, if you like,
+        then stir in the meat sauce. Serve in hot bowls and hand round Parmesan cheese,
+        for sprinkling on top.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/sutysw1468247559.jpg","strTags":"Pasta,Meat","strYoutube":"https:\/\/www.youtube.com\/watch?v=-gF8d-fitkU","strIngredient1":"onions","strIngredient2":"olive
+        oil","strIngredient3":"garlic","strIngredient4":"lean minced beef","strIngredient5":"mushrooms","strIngredient6":"dried
+        oregano","strIngredient7":"tomatoes","strIngredient8":"hot beef stock","strIngredient9":"tomato
+        puree","strIngredient10":"worcestershire sauce","strIngredient11":"spaghetti","strIngredient12":"parmesan","strIngredient13":null,"strIngredient14":null,"strIngredient15":null,"strIngredient16":null,"strIngredient17":null,"strIngredient18":null,"strIngredient19":null,"strIngredient20":null,"strMeasure1":"2","strMeasure2":"1tbsp","strMeasure3":"1
+        clove","strMeasure4":"500g","strMeasure5":"90g","strMeasure6":"1tsp","strMeasure7":"400g
+        can","strMeasure8":"300ml","strMeasure9":"1tbsp","strMeasure10":"1tbsp","strMeasure11":"350g","strMeasure12":"Topping","strMeasure13":"","strMeasure14":"","strMeasure15":"","strMeasure16":null,"strMeasure17":null,"strMeasure18":null,"strMeasure19":null,"strMeasure20":null,"strSource":null,"strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 16:07:37 GMT
+recorded_with: VCR 6.1.0
