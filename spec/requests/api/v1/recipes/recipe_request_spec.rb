@@ -36,6 +36,13 @@ describe 'recipe request' do
     expect(this_recipe[:attributes][:ingredients]).to be_a(Hash)
   end
 
+  it 'returns a status 404 if query isnt valid', :vcr do 
+    get '/api/v1/recipes/search?q=foobar'
+    binding.pry
+  end
+
+  
+
   it '#id_find' do
     # get '/api/v1/recipes/find?id=53051'
     #

@@ -36,8 +36,12 @@ class RecipesFacade
   end
 
   def self.make_some_poros(data)
-    data[:meals].map do |recipe|
-      Recipe.new(recipe)
-    end
+    begin 
+      data[:meals].map {|recipe| Recipe.new(recipe)}
+    rescue NoMethodError
+      render status: 404
+    end 
+
+
   end
 end

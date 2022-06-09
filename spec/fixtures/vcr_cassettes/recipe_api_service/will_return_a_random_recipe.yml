@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://themealdb.com/api/json/v1/1/random.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jun 2022 13:28:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '759'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=J4r1dGLd7%2Bz2%2FXkvfdiyU8XPG8sLjaa0x01MqT2cJm6QHSWQaK461fSG8xvOWLaiIlkJShIuW3X9cnjY1Yy05DKNUQfBipe6g56A1CFiJ8X2jW7zg6p9fFCJcBhSjzArvm1B%2B9XmH0ZZbQMt"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 718a3675f8776719-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meals":[{"idMeal":"53059","strMeal":"Mushroom soup with buckwheat","strDrinkAlternate":null,"strCategory":"Side","strArea":"Croatian","strInstructions":"Chop
+        the onion and garlic, slice the mushrooms and wash the buckwheat. Heat the
+        oil and lightly saut\u00e9 the onion. Add the mushrooms and the garlic and
+        continue to saut\u00e9. Add the salt, vegetable seasoning, buckwheat and the
+        bay leaf and cover with water. Simmer gently and just before it is completely
+        cooked, add pepper, sour cream mixed with flour, the chopped parsley and vinegar
+        to taste.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/1ngcbf1628770793.jpg","strTags":"Warming,
+        Soup","strYoutube":"https:\/\/www.youtube.com\/watch?v=M1ok7mG9-Qc","strIngredient1":"Mushrooms","strIngredient2":"Buckwheat","strIngredient3":"Vegetable
+        Oil","strIngredient4":"Onion","strIngredient5":"Garlic","strIngredient6":"Bay
+        Leaf","strIngredient7":"Vegetable Stock Cube","strIngredient8":"Sour Cream","strIngredient9":"White
+        Wine Vinegar","strIngredient10":"Parsley","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"150g","strMeasure2":"50g","strMeasure3":"4
+        tbs","strMeasure4":"40g","strMeasure5":"2 cloves","strMeasure6":"1","strMeasure7":"1tbsp","strMeasure8":"50
+        ml ","strMeasure9":"Dash","strMeasure10":"Top","strMeasure11":" ","strMeasure12":"
+        ","strMeasure13":" ","strMeasure14":" ","strMeasure15":" ","strMeasure16":"
+        ","strMeasure17":" ","strMeasure18":" ","strMeasure19":" ","strMeasure20":"
+        ","strSource":"https:\/\/www.visit-croatia.co.uk\/croatian-cuisine\/croatian-recipes\/","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}'
+  recorded_at: Thu, 09 Jun 2022 13:28:50 GMT
+recorded_with: VCR 6.1.0

@@ -4,11 +4,19 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def name_find
-    render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_name(params[:q]))
+    begin 
+      render json: RecipesSerializer.new(RecipesFacade.find_recipes_by_name(params[:q]))
+    rescue NoMethodError
+      render json: {text: "search item not found", status: 404}
+    end 
   end
 
   def id_find
-    render json: RecipesSerializer.new(RecipesFacade.find_recipe_by_id(params[:id]))
+    begin 
+      render json: RecipesSerializer.new(RecipesFacade.find_recipe_by_id(params[:id]))
+    rescue NoMethodError 
+      render json: {text: "Hahah caught you! Sneaky Sneak, can't fool us", status: 404}
+    end 
   end
 
   def ingredient_find
