@@ -36,8 +36,21 @@ RSpec.describe "User CRUD funtionality" do
         expect(User.ids).not_to include(user.id)
     end
 
-    it 'will return a 400 status if update fails' do 
+    it 'will return a 400 status if update cant find user' do 
         create_list(:user, 10)
         patch "/api/v1/users/1a?name=Sue"
+        expect(response.status).to eq (400)
+        message = JSON.parse(response.body, symbolize_names: true)
+        expect(message[:text]).to eq("Could not find user")
     end
+
+    it 'will return a 400 status if update cant find user' do 
+        create_list(:user, 10)
+        user = create(:user, name: "will")
+        patch "/api/v1/users/#{user.id}?na=Sue"
+        binding.pry
+        expect(response.status).to eq (400)
+        message = JSON.parse(response.body, symbolize_names: true)
+        expect(message[:text]).to eq("Invalid params")
+    end 
 end
