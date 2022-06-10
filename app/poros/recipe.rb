@@ -1,11 +1,11 @@
 class Recipe
   attr_reader :id,
-              :name,
-              :ingredients,
-              :image,
-              :instructions,
-              :category,
-              :area
+    :name,
+    :ingredients,
+    :image,
+    :instructions,
+    :category,
+    :area
   def initialize(recipe_data)
     @id = recipe_data[:idMeal]
     @name = recipe_data[:strMeal]
@@ -18,21 +18,17 @@ class Recipe
 
   def get_ingredients(recipe_data)
     ingredient_values = []
-
     recipe_data.keys.select do |key|
-      if key.to_s.include?('strIngredient')
+      if key.to_s.include?("strIngredient")
         ingredient_values.push(recipe_data[key])
       end
     end
-
     measurement_values = []
-
     recipe_data.keys.select do |key|
-      if key.to_s.include?('strMeasure')
+      if key.to_s.include?("strMeasure")
         measurement_values.push(recipe_data[key])
       end
     end
-
-    Hash[ingredient_values.zip(measurement_values)].compact
+    ingredient_values.zip(measurement_values).to_h.compact.delete_if { |k, v| k.empty? }
   end
 end
