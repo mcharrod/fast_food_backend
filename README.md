@@ -73,7 +73,7 @@ Alex Randolph - https://github.com/AlexGrandolph
 ![AlexR](./pictures/alex.png)  
 
 Katy Harrod - https://github.com/mcharrod  
-![KatyH](./pictures/katy.png)  
+![KatyH](./pictures/katy_h.png)  
 
 Reuben Davison - https://github.com/Reuben-Davison  
 ![ReubenD](./pictures/reuben.png)  
